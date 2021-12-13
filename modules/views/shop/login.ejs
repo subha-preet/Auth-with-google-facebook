@@ -28,6 +28,11 @@
                     <button class="btn btn-primary">Sign Up</button>
                 </a>
                 <div class="m-3 btn g-signin2" data-onsuccess="onSignIn"></div>
+                <!-- <a href="" onclick="loginWithFacebook()" class="m-3">
+                    <button class="btn btn-primary">Login with facebook</button>
+                </a> -->
+                <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+                </fb:login-button>
             </div>
 
             <%- include('../includes/footer.ejs') %>

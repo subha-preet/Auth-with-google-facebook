@@ -1,0 +1,27 @@
+{
+    "name": "auth",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "NODE_ENV=test node app.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/subha-preet/Auth-with-google-facebook.git"
+    },
+    "author": "Subhapreet Kaur Rajwans",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/subha-preet/Auth-with-google-facebook/issues"
+    },
+    "homepage": "https://github.com/subha-preet/Auth-with-google-facebook#readme",
+    "dependencies": {
+        "bluebird": "^3.7.2",
+        "config": "^3.3.6",
+        "errorhandler": "^1.5.1",
+        "express": "^4.17.1",
+        "nodemon": "^2.0.15"
+    }
+}

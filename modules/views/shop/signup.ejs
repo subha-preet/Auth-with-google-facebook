@@ -1,0 +1,33 @@
+<%- include('../includes/head.ejs') %>
+    <!-- <link rel="stylesheet" href="/css/product.css"> -->
+    </head>
+
+    <body>
+        <%- include('../includes/navbar.ejs') %>
+
+            <form>
+                <div class="m-3">
+                    <label for="InputName" class="form-label">Full Name</label>
+                    <input type="email" class="form-control" id="InputName" aria-describedby="nameHelp" required>
+                </div>
+                <div class="m-3">
+                    <label for="InputEmail" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" required>
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="m-3">
+                    <label for="InputPassword" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="InputPassword" required>
+                    <span id="passwordHelpInline" class="form-text">
+                          Must be 8-20 characters long.
+                    </span>
+                </div>
+
+                <div class="m-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="Check1" required>
+                    <label class="form-check-label" for="Check1">Check me out</label>
+                </div>
+                <button type="submit" class=" m-3 btn btn-primary">Submit</button>
+            </form>
+
+            <%- include('../includes/footer.ejs') %>

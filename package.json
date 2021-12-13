@@ -20,6 +20,8 @@
     "dependencies": {
         "bluebird": "^3.7.2",
         "config": "^3.3.6",
+        "dotenv": "^10.0.0",
+        "ejs": "^3.1.6",
         "errorhandler": "^1.5.1",
         "express": "^4.17.1",
         "nodemon": "^2.0.15"

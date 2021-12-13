@@ -1,0 +1,33 @@
+<%- include('../includes/head.ejs') %>
+    <script src="/js/google-api-platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="528394135014-22qeovd7efs53tg9is4tftdub2tvjn9k.apps.googleusercontent.com">
+    </head>
+
+    <body>
+        <%- include('../includes/navbar.ejs') %>
+
+            <form>
+                <div class="m-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="m-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="m-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class=" m-3 btn btn-primary">Submit</button>
+            </form>
+            <div class="m-3">
+                <p>If you don't have a account</p>
+                <a href="/signup">
+                    <button class="btn btn-primary">Sign Up</button>
+                </a>
+                <div class="m-3 btn g-signin2" data-onsuccess="onSignIn"></div>
+            </div>
+
+            <%- include('../includes/footer.ejs') %>
